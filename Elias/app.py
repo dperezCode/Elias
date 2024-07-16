@@ -64,14 +64,16 @@ def main():
 
 
 with st.container():
-        
+    # Obtener la ruta absoluta del archivo de imagen
+    current_dir = os.path.dirname(__file__)
+    imagen_path = os.path.join(current_dir, "imagenes", "dev.png")
+
     col1, col2 = st.columns(2)
     
     with col1:
         st.markdown("<h2 style='text-align: start;'>Escríbemos 📝</h2>", unsafe_allow_html=True)
         st.write("Dejámos tu mensaje y enseguida te respondemos")
-        image = Image.open("imagenes/dev.png") 
-        image = resize_image(image)
+        image = Image.open(imagen_path)
         st.image(image, use_column_width=True)
     
     with col2:

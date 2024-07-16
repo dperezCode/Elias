@@ -61,8 +61,7 @@ def main():
     else:
         st.write("No se encontraron datos en la tabla 'plagas'.")
 
-if __name__ == "__main__":
-    main()
+
 
 with st.container():
         
@@ -108,3 +107,5 @@ with st.container():
                 else:
                     st.success("Gracias por contactarnos, nos pondremos en contacto contigo pronto.")
 
+if __name__ == "__main__":
+    main()

@@ -1,7 +1,7 @@
 import streamlit as st
 from PIL import Image
 
-from sqlalchemy import create_engine
+
 import pandas as pd
 
 from reportlab.lib.pagesizes import letter, landscape

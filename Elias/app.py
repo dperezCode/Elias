@@ -26,9 +26,9 @@ with st.container():
         archivo_cargado = st.file_uploader(f"", type=["jpg", "jpeg", "png"])
         Image_fondo = st.columns(1)[0]
     with Image_fondo:
-        image = Image.open("imagenes/fondoTesis.png")
-        # image = resize_image(image)
+        image = Image.open(imagen_path)
         st.image(image, use_column_width=True)
+        # image = resize_image(image)
 
 # Configuración de la cadena de conexión
 def get_connection_string():

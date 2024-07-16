@@ -24,6 +24,8 @@ with st.container():
     if __name__ == "__main__":
         opcion = st.sidebar.radio("Seleccionar Procesamiento", ["Imagen", "Video"])
         archivo_cargado = st.file_uploader(f"", type=["jpg", "jpeg", "png"])
+
+        imagen_path = os.path.abspath("imagenes/fondoTesis.png")
         Image_fondo = st.columns(1)[0]
     with Image_fondo:
         image = Image.open(imagen_path)

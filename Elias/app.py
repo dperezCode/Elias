@@ -25,13 +25,13 @@ with st.container():
         opcion = st.sidebar.radio("Seleccionar Procesamiento", ["Imagen", "Video"])
         archivo_cargado = st.file_uploader(f"", type=["jpg", "jpeg", "png"])
 
-        # Obtener la ruta absoluta del archivo de imagen
-        
+       # Obtener la ruta absoluta del archivo de imagen
+        current_dir = os.path.dirname(__file__)
+        imagen_path = os.path.join(current_dir, "imagenes", "fondoTesis.png")
 
         # Mostrar la imagen en Streamlit
         Image_fondo = st.columns(1)[0]
         with Image_fondo:
-            imagen_path = os.path.abspath("imagenes/fondoTesis.png")
             image = Image.open(imagen_path)
             st.image(image, use_column_width=True)
 

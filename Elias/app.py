@@ -4,7 +4,6 @@ from PIL import Image
 
 import pandas as pd
 
-from reportlab.lib.pagesizes import letter, landscape
 
 from io import BytesIO
 CARPETA_CARGA = 'uploads'

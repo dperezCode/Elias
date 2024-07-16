@@ -27,7 +27,7 @@ with st.container():
         Image_fondo = st.columns(1)[0]
     with Image_fondo:
         #image = Image.open("imagenes/fondoTesis.png")
-        imagen_path = os.path.abspath("imagenes/fondoTesis.png"
+        image = os.path.abspath("imagenes/fondoTesis.png"
         # image = resize_image(image)
         st.image(image, use_column_width=True)
 
